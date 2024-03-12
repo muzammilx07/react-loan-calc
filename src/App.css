@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.loan-calculator-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #f8f8f8;
+  border: 2px solid #3498db;
+  border-radius: 8px;
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.input-section,
+.output-section {
+  width: 45%;
+  padding: 15px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-section label,
+.output-section label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: bold;
+}
+input[type="range"] {
+  width: 100%;
+  margin-top: 5px;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  color: #3498db;
+}
+
+h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ecf0f1;
+}
+
+div {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+#loanChart {
+  display: block;
+  margin: auto;
+}
+h1{
+  text-align: center ;
 }
